@@ -1,7 +1,7 @@
 PHTML
 =====
 
-Extremely simple PHP/HTML template engine which allows you to mix PHP and HTML seamlessly using only standard PHP and HTML syntax. There are no new language syntax or commands to learn.
+Extremely simple PHP/HTML template engine which allows you to mix PHP and HTML seamlessly using only standard PHP and HTML syntax. There are no new language commands or syntax to learn.
 
 How To
 ------
