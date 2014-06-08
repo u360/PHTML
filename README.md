@@ -79,9 +79,24 @@ This HTML line includes dynamic content produced by PHP code...
     
 Suppose that the PHP variable $name was defined as "John Doe", then that line would send this to the browser...
 
-    <p><big>Hello John Doe</big></p>
+    <p><big>Hello John Doe!</big></p>
     
 PHP Lines
 ---------
 
 All other lines are treated as regular PHP lines. There are no new commands or syntax.
+
+No Whitespace
+-------------
+
+All of the lines are trimmed of leading and trailing whitespace. This makes it easier to output HTML elements that are supposed to be next to each other. No more gaps between images.
+
+There will be no space or gap between these images...
+
+    <td>
+      $photos = array("left.jpg", "middle.jpg", "right.jpg");
+      foreach ($photos as $image) {
+        <img src="<!-- $image -->" />
+      }
+    </td>
+
