@@ -14,11 +14,13 @@ to this...
 
     <?php $phtml = <<<'phtml'
 
-Then add these two lines to the end of your file...
+and add these two lines to the end of your file...
 
     phtml;
     require 'phtml.php';
-    
+
+That's it!
+
 Hello World
 ===========
 
