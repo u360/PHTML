@@ -1,7 +1,7 @@
 PHTML
 =====
 
-Extremely simple PHP template engine which allows you to mix PHP and HTML seamlessly using only standard PHP syntax other than {{ and }}.
+Extremely simple PHP/HTML template engine which allows you to mix PHP and HTML seamlessly using only standard syntax. No new commands.
 
 How To
 ======
@@ -29,7 +29,7 @@ Hello World
       <body>
         $friend = array("John", "Mary");
         foreach ($friend as $name) {
-          <p>Hello {{ $name }}!</p>
+          <p>Hello <!-- $name -->!</p>
         }
       </body>
     </html>
