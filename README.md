@@ -6,7 +6,7 @@ Extremely simple PHP/HTML template engine which allows you to mix PHP and HTML s
 How To
 ------
 
-1.) Change the first line in your PHP file from this...
+1.) Change the first line of your PHP files from this...
 
     <?php
 
@@ -14,7 +14,7 @@ to this...
 
     <?php $phtml = <<<'phtml'
 
-2.) Add these two lines to the end of your PHP file...
+2.) Add these two lines to the end of your PHP files...
 
     phtml;
     require 'phtml.php';
