@@ -1,4 +1,4 @@
-phtml
+PHTML
 =====
 
 Extremely simple PHP template engine which allows you to mix PHP and HTML seamlessly using only standard PHP syntax.
