@@ -1,7 +1,7 @@
 PHTML
 =====
 
-Extremely simple PHP/HTML template engine which allows you to mix PHP and HTML seamlessly using only standard syntax. No new commands.
+Extremely simple PHP/HTML template engine which allows you to mix PHP and HTML seamlessly using only standard PHP and HTML syntax. There are no new language syntax or commands to learn.
 
 How To
 ------
@@ -49,7 +49,8 @@ These lines will be treated as HTML lines...
 and this whole section will be treated as HTML lines...
 
     <a href="#" class="large-font"
-        onclick="dosomething()">
+        onmouseover="dosomething()"
+        onclick="dosomethingelse()">
       <img src="icon.png" />
     </a>
 
