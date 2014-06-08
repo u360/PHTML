@@ -6,7 +6,7 @@ Extremely simple PHP template engine which allows you to mix PHP and HTML seamle
 How To
 ======
 
-Just change the first line in your PHP file from this...
+1.) Change the first line in your PHP file from this...
 
     <?php
 
@@ -14,7 +14,7 @@ to this...
 
     <?php $phtml = <<<'phtml'
 
-and add these two lines to the end of your PHP file...
+2.) Add these two lines to the end of your PHP file...
 
     phtml;
     require 'phtml.php';
