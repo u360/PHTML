@@ -1,7 +1,7 @@
 PHTML
 =====
 
-Extremely simple PHP/HTML template engine which allows you to mix PHP and HTML seamlessly using only standard PHP and HTML syntax. There are no new language commands or syntax to learn.
+Extremely simple PHP template engine that allows you to mix PHP and HTML seamlessly using only standard PHP and HTML syntax. There are no new language commands or syntax to learn.
 
 How To
 ------
@@ -39,9 +39,9 @@ Hello World
 HTML Lines
 ----------
 
-Lines that begin with `<` are treated as HTML lines. If the line does not end with `>`, then the next line is treated as an HTML line as well. So will all lines until a line does end with `>`.
+Lines that begin with `<` are treated as HTML lines. If the line does not end with `>`, then the next line is treated as an HTML line as well. So will all lines until a line does end with `>`. This allows you to split long HTML lines over multiple lines.
 
-These lines will be treated as HTML lines...
+These two lines will be treated as HTML lines...
 
     <p>Hello World!</p>
     <img src="photo.jpg" width="400" height="300" />
@@ -62,20 +62,22 @@ All of the lines within a `<script>` or `<style>` section are treated as HTML li
 This whole section will be treated as HTML lines...
 
     <style>
-      body {margin: 0}
+      html {margin: 0};
+      body {margin: 0};
     </style>
     <script>
       var username = "johndoe";
+      var password = "secret";
     </script>
 
-HTML Comments
--------------
+PHP within HTML
+---------------
 
-HTML comments are treated as PHP expressions. If you need to output some dynamic content within an HTML line, you can include the dynamic content as a PHP expression within an HTML comment which begins with `<!--` and ends with `-->`.
+To include a PHP expression within an HTML line, just enclose the PHP expression in `<?` and `?>` tags.
 
 This HTML line includes dynamic content produced by PHP code...
 
-    <p><big>Hello <!-- $name -->!</big></p>
+    <p><big>Hello <? $name ?>!</big></p>
     
 Suppose that the PHP variable $name was defined as "John Doe", then that line would send this to the browser...
 
@@ -96,7 +98,7 @@ There will be no space or gap between these images...
     <td>
       $photos = array("left.jpg", "middle.jpg", "right.jpg");
       foreach ($photos as $image) {
-        <img src="<!-- $image -->" />
+        <img src="<? $image ?>" />
       }
     </td>
 
