@@ -29,7 +29,7 @@ Hello World
       <body>
         $friend = array("John", "Mary");
         foreach ($friend as $name) {
-          <p>Hello <!-- $name -->!</p>
+          <p>Hello <? $name ?>!</p>
         }
       </body>
     </html>
