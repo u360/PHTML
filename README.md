@@ -19,6 +19,8 @@ to this...
     phtml;
     require "phtml.php";
 
+3.) Download the phtml.php file to your server.
+
 That's it!
 
 Hello World
