@@ -1,7 +1,7 @@
 PHTML
 =====
 
-Extremely simple PHP template engine that allows you to mix PHP and HTML seamlessly using only standard PHP and HTML syntax. There are no new language commands or syntax to learn.
+Super simple PHP template engine that allows you to mix PHP and HTML seamlessly using only standard PHP and HTML syntax. There are no new language commands or syntax to learn.
 
 How To
 ------
@@ -17,7 +17,7 @@ to this...
 2.) Add these two lines to the end of your PHP files...
 
     phtml;
-    require 'phtml.php';
+    require "phtml.php";
 
 That's it!
 
@@ -34,7 +34,7 @@ Hello World
       </body>
     </html>
     phtml;
-    require 'phtml.php';
+    require "phtml.php";
 
 HTML Lines
 ----------
