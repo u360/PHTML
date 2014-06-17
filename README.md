@@ -29,8 +29,8 @@ Hello World
     <?php $phtml = <<<'phtml'
     <html>
       <body>
-        $friend = array("John", "Mary");
-        foreach ($friend as $name) {
+        $friends = array("John", "Mary");
+        foreach ($friends as $name) {
           <p>Hello <? $name ?>!</p>
         }
       </body>
