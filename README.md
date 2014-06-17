@@ -93,9 +93,7 @@ All other lines are treated as regular PHP lines. There are no new commands or s
 No Whitespace
 -------------
 
-All of the lines are trimmed of leading and trailing whitespace. This makes it easier to output HTML elements that are supposed to be next to each other. No more gaps between images.
-
-There will be no space or gap between these images...
+All of the lines are trimmed of leading and trailing whitespace. This makes it easier to output HTML elements that are supposed to be next to each other. There will be no space or gap between these images...
 
     <td>
       $photos = array("left.jpg", "middle.jpg", "right.jpg");
