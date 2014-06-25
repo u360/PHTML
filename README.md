@@ -102,3 +102,7 @@ All of the lines are trimmed of leading and trailing whitespace. This makes it e
       }
     </td>
 
+License
+=======
+
+PHTML is licensed under the MIT license.
